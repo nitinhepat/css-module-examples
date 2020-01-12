@@ -1,0 +1,55 @@
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.parent .bold{
+    color: blue;
+    font-weight: bold;
+}
+
+.red.bold{
+    font-style: italic;
+}
+
+
+.mainClass {
+    composes: red;
+    text-align: center;
+}
+
+.compositeClass {
+    composes: commonClass from './Main.css';
+    font-weight: bold;
+    color: red;
+}
+
+#mainComponent {
+    background-color: blueviolet;
+}
+
+label {
+    color: brown;
+}
+
+
+
+  .small {
+    font-size: 40px;;
+  }
+  .large {
+   font-size: 50px;
+  }
+  
+  @media (max-width: 600px) {
+    .small {
+        font-size: 20px;
+    }
+    .large {
+        font-size: 30px;
+    }
+}
